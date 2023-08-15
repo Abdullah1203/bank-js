@@ -10,7 +10,7 @@ document.getElementById("submit").addEventListener("click", function () {
   const password = document.getElementById("password");
 
   if (email.value === "admin" && password.value === "admin") {
-    location.href = "http://127.0.0.1:5500/BANK%20PROJECT%20JS/bank.html";
+    location.assign("bank.html");
   } else {
     alert("WRONG INFO 😡");
   }
