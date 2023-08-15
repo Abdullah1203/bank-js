@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABDs BANK</title>
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="my-12">
+      <h1 class="text-5xl font-bold text-center uppercase">
+        🏦 ABD's Bank
+        <span class="text-red-500 font-bold">Ltd</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-green-200 mx-auto space-y-10">
+        <h2 class="text-4xl font-semibold text-center pt-10">
+          Lets get some
+          <span class="text-red-500 font-bold">Moooooney! 💸</span>
+        </h2>
+
+        <!-- DISPLAY AMOUNT STARTS-->
+        <div
+          class="w-[80%] flex gap-x-5 text-left justify-center mx-auto py-10"
+        >
+          <div
+            class="p-10 bg-emerald-500 text-white w-full text-left space-y-4 rounded-xl"
+          >
+            <h4 class="text-2xl font-semibold">Deposit</h4>
+            <h3 id="deposit" class="text-4xl">$0</h3>
+          </div>
+          <div
+            class="p-10 bg-pink-400 text-white w-full text-left space-y-4 rounded-xl"
+          >
+            <h4 class="text-2xl font-semibold">Withdraw</h4>
+            <h3 id="withdraw" class="text-4xl">$0</h3>
+          </div>
+          <div
+            class="p-10 bg-amber-300 text-zinc-600 w-full text-left space-y-4 rounded-xl"
+          >
+            <h4 class="text-2xl font-semibold">Balance</h4>
+            <h3 id="balance" class="text-4xl">$0</h3>
+          </div>
+        </div>
+        <!-- DISPLAY AMOUNT ENDS -->
+
+        <!-- Please deposit/withdraw AMOUNT box STARTS-->
+
+        <div class="w-[80%] flex gap-x-5 text-left justify-center mx-auto">
+          <div
+            class="p-10 bg-indigo-500 text-white w-full text-left space-y-4 rounded-xl"
+          >
+            <h4 class="text-4xl mb-10">Please Deposit</h4>
+            <div class="space-y-6 pl-12">
+              <input
+                id="deposit-amount"
+                class="w-[80%] xl:w-[60%] px-4 py-2 rounded-md border-2 border-slate-300 focus:outline-none block text-slate-800"
+                type="text"
+                placeholder="$ amount you want to deposit"
+              />
+
+              <button
+                id="deposit-button"
+                class="bg-blue-900 px-8 py-3 w-min rounded-md text-white font-medium hover:bg-emerald-400"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div
+            class="p-10 bg-violet-500 text-white w-full text-left space-y-4 rounded-xl"
+          >
+            <h4 class="text-4xl mb-10">Please Withdraw</h4>
+            <div class="space-y-6 pl-12">
+              <input
+                id="withdraw-amount"
+                class="w-[80%] xl:w-[60%] px-4 py-2 rounded-md border-2 border-slate-300 focus:outline-none block text-slate-800"
+                type="text"
+                placeholder="$ amount you want to withdraw"
+              />
+              <button
+                id="withdraw-button"
+                class="bg-blue-900 px-8 py-3 w-min rounded-md text-white font-medium hover:bg-pink-400"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Please deposit/withdraw AMOUNT box ENDS-->
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- SCRIPTS TAGS -->
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
