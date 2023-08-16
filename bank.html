@@ -22,36 +22,36 @@
   </head>
   <body>
     <header class="my-12">
-      <h1 class="text-5xl font-bold text-center uppercase">
+      <h1 class="text-4xl sm:text-5xl font-bold text-center uppercase">
         🏦 ABD's Bank
         <span class="text-red-500 font-bold">Ltd</span>
       </h1>
     </header>
     <main>
       <section class=" mx-auto space-y-10">
-        <h2 class="text-4xl font-semibold text-center pt-10">
+        <h2 class="text-3xl sm:text-4xl font-semibold text-center pt-10">
           Lets get some
           <span class="text-red-500 font-bold">Moooooney! 💸</span>
         </h2>
 
         <!-- DISPLAY AMOUNT STARTS-->
         <div
-          class="w-[80%] flex gap-x-5 text-left justify-center mx-auto py-10"
+          class="w-[80%] grid grid-cols-2  gap-2 md:flex md:gap-x-5 text-left justify-center mx-auto py-10"
         >
           <div
-            class="p-10 bg-yellow-400 text-white w-full text-left space-y-4 rounded-xl"
+            class="p-4 sm:p-10 bg-yellow-400 text-white w-full text-left space-y-4 rounded-xl"
           >
             <h4 class="text-2xl font-semibold">Deposit</h4>
-            <h3  class="text-4xl">$<span id="deposit">0</span></h3>
+            <h3  class="text-3xl sm:text-4xl">$<span id="deposit">0</span></h3>
           </div>
           <div
-            class="p-10 bg-red-400 text-white w-full text-left space-y-4 rounded-xl"
+            class="p-4 sm:p-10 bg-red-400 text-white w-full text-left space-y-4 rounded-xl"
           >
             <h4 class="text-2xl font-semibold">Withdraw</h4>
-            <h3  class="text-4xl">$<span id="withdraw">0</span></h3>
+            <h3  class="text-3xl sm:text-4xl">$<span id="withdraw">0</span></h3>
           </div>
           <div
-            class="p-10 bg-blue-300 text-white w-full text-left space-y-4 rounded-xl"
+            class="p-10 bg-blue-300 text-white w-full text-left space-y-4 rounded-xl col-span-2 "
           >
             <h4 class="text-2xl font-semibold">Balance</h4>
             <h3  class="text-4xl">$<span id="balance">20500</span></h3>
@@ -61,12 +61,12 @@
 
         <!-- Please deposit/withdraw AMOUNT box STARTS-->
 
-        <div class="w-[80%] flex gap-x-5 text-left justify-center mx-auto">
+        <div class="w-[80%] grid grid-cols-1 gap-2 md:flex gap-x-5 text-left justify-center mx-auto pb-6">
           <div
             class="p-10 bg-sky-400 text-white w-full text-left space-y-4 rounded-xl"
           >
             <h4 class="text-4xl mb-10">Please Deposit</h4>
-            <div class="space-y-6 pl-12">
+            <div class="space-y-6 ">
               <input
                 id="deposit-amount"
                 class="w-[80%] xl:w-[60%] px-4 py-2 rounded-md border-2 border-slate-300 focus:outline-none block text-slate-800"
@@ -86,7 +86,7 @@
             class="p-10 bg-zinc-600 text-white w-full text-left space-y-4 rounded-xl"
           >
             <h4 class="text-4xl mb-10">Please Withdraw</h4>
-            <div class="space-y-6 pl-12">
+            <div class="space-y-6 ">
               <input
                 id="withdraw-amount"
                 class="w-[80%] xl:w-[60%] px-4 py-2 rounded-md border-2 border-slate-300 focus:outline-none block text-slate-800"
@@ -106,7 +106,17 @@
         <!-- Please deposit/withdraw AMOUNT box ENDS-->
       </section>
     </main>
-    <footer></footer>
+    <footer class="">
+      <section class=" w-full p-8 text-center sm:hidden bg-slate-800 bottom-0 ">
+        <div class=" text-slate-200 space-y-2 text-sm">
+          <p>You are on mobile 📱</p>
+          <p>try our latest app on:</p>
+          <img class="w-32 mx-auto" src="copyrightstore.png" alt="apps">
+          <p class="pt-3">Terms of Use • Privacy Policy</p>
+          <p class="text-slate-500">&copy; ABD NIMIT || 2023</p>
+        </div>
+      </section>
+    </footer>
 
     <!-- SCRIPTS TAGS -->
     <script src="bank.js"></script>
